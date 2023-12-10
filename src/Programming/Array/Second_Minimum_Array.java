@@ -3,6 +3,10 @@ package Programming.Array;
 import java.util.Arrays;
 
 public class Second_Minimum_Array {
+	/**
+	 * approach 1
+	 * @param n
+	 */
 	public static void approach_1(int n[]) {
 		int max=n[0];
 		for(int i=0;i<n.length;i++) {
@@ -22,6 +26,10 @@ public class Second_Minimum_Array {
 		}
 		System.out.println(secmini);
 	}
+	/**
+	 * approach 2
+	 * @param n
+	 */
 	public static void approach_2(int n[]) {
 		Arrays.sort(n);
 		int mini=n[n.length-1],secmini=0;
